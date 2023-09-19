@@ -144,7 +144,7 @@ def draw_loop(radius: float, increment: float, width: float, layer: str, wrap_mu
         ),
         generate_arc(
             P2D(-radius, 0),
-            P2D(0, wrap_multiplier * (radius + increment / 2)),
+            P2D(increment / 2, wrap_multiplier * (radius + increment / 2)),
             P2D(radius + increment, 0),
             width,
             layer,
